@@ -1,0 +1,6 @@
+[submodule "eureka"]
+	path = eureka
+	url = https://github.com/javawcy/cloud-eureka.git
+[submodule "config-server"]
+	path = config-server
+	url = https://github.com/javawcy/cloud-config-server.git

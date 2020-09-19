@@ -9,6 +9,11 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>config-server</module>
+        <module>eureka</module>
+    </modules>
+
     <properties>
         <spring.cloud.version>Hoxton.SR8</spring.cloud.version>
         <spring.boot.version>2.3.3.RELEASE</spring.boot.version>
