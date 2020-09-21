@@ -4,3 +4,6 @@
 [submodule "config-server"]
 	path = config-server
 	url = https://github.com/javawcy/cloud-config-server.git
+[submodule "gateway"]
+	path = gateway
+	url = https://github.com/javawcy/cloud-demo-gateway.git
