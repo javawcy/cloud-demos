@@ -7,3 +7,6 @@
 [submodule "gateway"]
 	path = gateway
 	url = https://github.com/javawcy/cloud-demo-gateway.git
+[submodule "oauth2-server"]
+	path = oauth2-server
+	url = https://github.com/javawcy/oauth2-server.git
