@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    config:
+      label: master
+      profile: dev
+      name: server-demo1
+      discovery:
+        service-id: config-server
+        enabled: true
+      username: admin
+      password: admin

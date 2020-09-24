@@ -1,0 +1,29 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /demo1
+spring:
+  application:
+    name: service-demo1
+  security:
+    user:
+      name: admin
+      password: admin
+security:
+  oauth2:
+    resource:
+      id: demo-server1
+      service-id: oauth2-server
+      user-info-uri: http://${security.oauth2.resource.service-id}/oauth2/current
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:[${spring.cloud.client.ip-address}:${server.port}]
+  client:
+    service-url:
+      defaultZone: http://admin:admin@eureka1:8080/eureka/,http://admin:admin@eureka2:8080/eureka/,http://admin:admin@eureka3:8080/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, bus-refresh
