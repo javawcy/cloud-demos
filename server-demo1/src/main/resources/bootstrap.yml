@@ -9,12 +9,8 @@ spring:
     user:
       name: admin
       password: admin
-security:
-  oauth2:
-    resource:
-      id: demo-server1
-      service-id: oauth2-server
-      user-info-uri: http://${security.oauth2.resource.service-id}/oauth2/current
+  profiles:
+    active: dev
 eureka:
   instance:
     prefer-ip-address: true
