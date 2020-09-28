@@ -1,5 +1,6 @@
 package dev.lowdad.cloud.serverdemo1.config;
 
+import dev.lowdad.cloud.common.enums.TokenStoreType;
 import dev.lowdad.cloud.common.model.vo.UserInfoVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -41,11 +42,6 @@ import java.util.Map;
 @Configuration
 @EnableResourceServer
 public class Oauth2ResourceConfig extends ResourceServerConfigurerAdapter {
-
-    //定义token存储方式
-    private enum TokenStoreType {
-        REDIS, JWT
-    }
 
     private final TokenStoreType tokenStoreType = TokenStoreType.JWT;
     private final JwtSignConfiguration jwtSignConfiguration;
