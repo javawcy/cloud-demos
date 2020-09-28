@@ -15,6 +15,7 @@
         <module>gateway</module>
         <module>oauth2-server</module>
         <module>server-demo1</module>
+        <module>common</module>
     </modules>
 
     <properties>
@@ -25,6 +26,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <mysql.version>8.0.21</mysql.version>
+        <common.version>0.0.1-SNAPSHOT</common.version>
     </properties>
 
     <dependencyManagement>
@@ -43,15 +45,13 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>dev.lowdad.cloud</groupId>
+                <artifactId>common</artifactId>
+                <version>${common.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-    </dependencies>
 
     <build>
         <plugins>
