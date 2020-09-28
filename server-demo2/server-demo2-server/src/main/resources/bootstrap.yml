@@ -18,6 +18,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://admin:admin@eureka1:8080/eureka/,http://admin:admin@eureka2:8080/eureka/,http://admin:admin@eureka3:8080/eureka/
+    fetch-registry: true
 management:
   endpoints:
     web:
