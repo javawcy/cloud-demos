@@ -16,5 +16,6 @@
 
     <modules>
         <module>server-demo2-server</module>
+        <module>server-demo2-client</module>
     </modules>
 </project>

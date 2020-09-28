@@ -15,6 +15,7 @@
         <module>gateway</module>
         <module>oauth2-server</module>
         <module>server-demo1</module>
+        <module>server-demo2</module>
         <module>common</module>
     </modules>
 
@@ -49,6 +50,11 @@
                 <groupId>dev.lowdad.cloud</groupId>
                 <artifactId>common</artifactId>
                 <version>${common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dev.lowdad.cloud</groupId>
+                <artifactId>server-demo2-client</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
