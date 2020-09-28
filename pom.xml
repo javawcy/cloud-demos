@@ -16,7 +16,6 @@
         <module>oauth2-server</module>
         <module>server-demo1</module>
         <module>server-demo2</module>
-        <module>zipkin-server</module>
         <module>common</module>
     </modules>
 
@@ -28,7 +27,6 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <mysql.version>8.0.21</mysql.version>
-        <zipkin.version>2.12.9</zipkin.version>
         <common.version>0.0.1-SNAPSHOT</common.version>
     </properties>
 
