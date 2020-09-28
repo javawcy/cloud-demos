@@ -42,6 +42,7 @@ import java.util.Map;
 @EnableResourceServer
 public class Oauth2ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
+    private final static String resourceId = "demo1";
     private final TokenStoreType tokenStoreType = TokenStoreType.JWT;
     private final JwtSignConfiguration jwtSignConfiguration;
     private final RedisConnectionFactory redisConnectionFactory;
@@ -55,6 +56,7 @@ public class Oauth2ResourceServerConfig extends ResourceServerConfigurerAdapter 
     @Override
     public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
         resources.tokenStore(tokenStore());
+        resources.resourceId(resourceId);
     }
 
     @Override
