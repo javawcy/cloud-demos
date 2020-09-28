@@ -42,8 +42,17 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>dev.lowdad.cloud</groupId>
             <artifactId>common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>dev.lowdad.cloud</groupId>
+            <artifactId>server-demo2-client</artifactId>
         </dependency>
 
         <dependency>

@@ -18,6 +18,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://admin:admin@eureka1:8080/eureka/,http://admin:admin@eureka2:8080/eureka/,http://admin:admin@eureka3:8080/eureka/
+#   同步服务发现的服务，feign调用这个需要开启
+    fetch-registry: true
 management:
   endpoints:
     web:
